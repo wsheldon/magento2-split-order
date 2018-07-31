@@ -26,7 +26,15 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
             </group>
+            <group id="options" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="20" translate="label">
+                <label>Settings</label>
+                <field id="attributes" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Attribute to Split</label>
+                    <frontend_class>attributes</frontend_class>
+                    <source_model>Magestat\SplitOrder\Model\Config\Source\Attributes</source_model>
+                    <comment>Select the product attribute that you would like to be the order separator.</comment>
+                </field>
+            </group>
         </section>
     </system>
 </config>
-
